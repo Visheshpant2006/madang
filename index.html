@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Madang – Healthy Food Delivery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#home" aria-label="Madang home">
+   <svg width="58" height="40" viewBox="0 0 58 40" fill="none" stroke="#2ecc71" stroke-width="2.5" stroke-linecap="round"><path d="M4 12h8M2 17h10M6 22h6"/><path d="M20 24a15 15 0 0 1 30 0"/><path d="M35 7v-2"/><circle cx="35" cy="3.5" r="1.6"/><path d="M18 28l32-5"/><circle cx="23" cy="34" r="3.5"/><circle cx="44" cy="31" r="3.5"/></svg>
+   <span><b>madang</b><small>healthy food delivery</small></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰<span class="badge" id="badge" hidden>0</span></button>
+ </div>
+ <nav id="menu"><div class="wrap" style="padding:0">
+  <a href="#home">Home</a><a href="#how">How It Works</a><a href="#menusec">Menu</a><a href="#about">About</a><a href="#location">Contact / Location</a>
+  <a href="#login" id="navLogin">Login</a><button id="openCart">🛒 My Cart</button><button id="themeBtn">🌓 Toggle theme</button>
+ </div></nav>
+</header>
+
+<main>
+<!-- HOME -->
+<div id="home" class="page home" style="padding:0">
+ <div class="wrap">
+  <section class="hero">
+   <div><h1>Healthy Inside,<br><span>Happy outside</span></h1><p>We deliver healthy food that is ready to eat</p><a class="btn" href="#menusec">Order now</a></div>
+   <div class="fruit" aria-hidden="true">
+    <i style="right:10%;top:0;font-size:110px">🍓</i><i style="right:-2%;top:70px;font-size:120px">🫐</i><i style="right:36%;top:80px;font-size:130px">🍊</i>
+    <i style="right:4%;top:190px;font-size:100px">🥕</i><i style="right:42%;top:230px;font-size:90px">🌺</i><i style="right:20%;top:260px;font-size:90px">🥝</i>
+   </div>
+  </section>
+
+  <h2 class="sec" id="how">How It Works</h2>
+  <section class="steps">
+   <div class="step"><svg viewBox="0 0 64 64"><path d="M10 6v16a4 4 0 0 0 8 0V6M14 22v36M50 6c-6 4-8 12-8 22h8V58"/><circle cx="30" cy="32" r="12" transform="translate(0 0)"/><circle cx="30" cy="32" r="7"/></svg><h3>Choose Your Favorite</h3><p>Choose your favorite meal and order it online. It’s easy to customize your order.</p></div>
+   <div class="step"><svg viewBox="0 0 64 64"><path d="M4 22h12M8 30h14M12 38h10"/><circle cx="34" cy="14" r="6"/><path d="M26 30l10-8 12 8 6 10M36 22l-4 16 14 6"/><circle cx="20" cy="54" r="5"/><circle cx="50" cy="54" r="5"/></svg><h3>We Deliver Your Meal</h3><p>Our rider picks up your fresh order and brings it to your door, hot and on time.</p></div>
+   <div class="step"><svg viewBox="0 0 64 64"><path d="M8 34h48a24 24 0 0 1-48 0zM32 10v8M18 14l4 6M46 14l-4 6"/></svg><h3>Eat &amp; Enjoy</h3><p>Sit back, relax and enjoy a healthy, tasty and hygienic meal.</p></div>
+  </section>
+
+  <h2 class="sec">Our Featured Menu</h2>
+  <section class="grid" id="featured"></section>
+
+  <h2 class="sec" id="menusec">Menu Categories</h2>
+  <section class="cats" id="cats"></section>
+  <div id="catItems"></div>
+
+  <section class="about" id="about">
+   <h2>We Are Not Just A Team,<br>We Are A Family</h2>
+   <p>We believe that fresh, healthy and hygienic food is every one’s right.</p>
+   <p>We offer you all of these qualities in your meal.</p>
+   <p>We are you and you are Madang.</p>
+   <div class="photo" aria-hidden="true">😄🍩</div>
+  </section>
+
+  <section class="app">
+   <div class="phone" aria-hidden="true">🥗</div>
+   <div><small>Download the app</small><h3>Choose. Eat. Enjoy</h3><button class="store" data-t="App Store link coming soon">Available on the App Store</button><button class="store" data-t="Google Play link coming soon">Get it on Google Play</button></div>
+  </section>
+ </div>
+</div>
+
+<!-- LOCATION -->
+<div id="location" class="page" hidden>
+ <div class="wrap"><div class="panel" style="max-width:560px;margin:0 auto">
+  <h1>Location Information</h1>
+  <h3 style="margin:10px 0 4px;font-weight:500">Our Address</h3>
+  <p style="margin:0">A-123, Shastri Nagar<br>Delhi-110052<br>📞 +91 78276 54032<br>📠 +91 98992 43772<br>✉️ <a href="mailto:madang@food.net" style="color:var(--blue)">madang@food.net</a></p>
+  <div class="btns"><a class="btn blue" href="tel:+917827654032">📞 Call</a><a class="btn sky" href="skype:madang.food?call">Skype</a><a class="btn" href="mailto:madang@food.net">✉ Email</a></div>
+  <h2 style="margin:26px 0 0;font-weight:500">Send us your Feedback</h2>
+  <form id="fb" novalidate>
+   <label for="fn">First Name</label><input id="fn" placeholder="First Name" autocomplete="given-name">
+   <label for="ln">Last Name</label><input id="ln" placeholder="Last Name" autocomplete="family-name">
+   <label for="ct">Contact Tel.</label><input id="ct" type="tel" placeholder="10-digit mobile number" autocomplete="tel">
+   <label for="em">Email</label><input id="em" type="email" placeholder="you@example.com" autocomplete="email">
+   <label for="msg">Your Feedback</label><textarea id="msg" rows="4" placeholder="Tell us about your experience"></textarea>
+   <div class="err" id="fbErr" role="alert"></div>
+   <button class="btn" type="submit">Submit Feedback</button> <span class="ok" id="fbOk"></span>
+  </form>
+ </div></div>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="page" hidden>
+ <div class="wrap"><div class="panel login">
+  <div class="logo"><span><b>madang</b><small>healthy food delivery</small></span></div>
+  <form id="lf" novalidate>
+   <label for="u">User Name</label><input id="u" placeholder="Username" autocomplete="username" style="text-align:center">
+   <label for="p">Password</label><input id="p" type="password" placeholder="Password" autocomplete="current-password" style="text-align:center">
+   <div class="err" id="lErr" role="alert"></div>
+   <button class="btn blue" id="lBtn" type="submit">Login</button><br>
+   <button class="link" type="button" id="swap">New here? Create an account</button>
+  </form>
+  <div id="session" hidden><p class="ok" id="hello"></p><button class="btn" id="logout">Log out</button></div>
+ </div></div>
+</div>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="cols">
+   <div><h3>Links</h3><a href="#home">Home</a><a href="#about">About</a><a href="#menusec">Menu</a><a href="#location">Contact</a></div>
+   <div><h3>Our Address</h3><p>A-123, Shastri Nagar<br>Delhi-110052</p><p>📞: +91 78276 54032</p><p>📠: +91 98992 43772</p><p>✉️: madang@food.net</p></div>
+  </div>
+  <div class="social">
+   <a style="background:#dd4b39" href="#home" data-t="Google+">G+</a><a style="background:#3b5998" href="#home" data-t="Facebook">f</a><a style="background:#0077b5" href="#home" data-t="LinkedIn">in</a><a style="background:#1da1f2" href="#home" data-t="Twitter">🐦</a><a style="background:#e62117" href="#home" data-t="YouTube">▶</a><a style="border:1px solid #fff" href="mailto:madang@food.net">✉</a>
+  </div>
+  <div class="copy">© Madang 2026: Made by Vishesh Pant</div>
+ </div>
+</footer>
+
+<aside id="drawer" aria-label="Cart"><h3><span>🛒 Your Cart</span><button class="q" id="closeCart" aria-label="Close">✕</button></h3>
+ <div id="cartList"></div>
+ <div class="foot"><div style="display:flex;justify-content:space-between;font-weight:700;margin-bottom:10px"><span>Total</span><span id="total">₹0</span></div><button class="btn" style="width:100%" id="checkout">Place Order</button></div>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
